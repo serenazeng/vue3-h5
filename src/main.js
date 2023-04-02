@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
-import './style.css'
+import Router from './router/index'
 import App from './App.vue'
+import 'amfe-flexible'
 
-createApp(App).mount('#app')
+// 创建并挂载根实例
+const app = createApp(App)
+app.use(Router)
+app.mount('#app')
